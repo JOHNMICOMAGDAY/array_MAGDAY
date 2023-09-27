@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ARRAY METHODS</h1>
+
+    <button onclick="arrayLength()">Array Length</button>
+    <button onclick="arrayToString()">Array toString()</button>
+    <button onclick="arrayPop()">Array pop()</button>
+
+    <div id="output"></div>
+
+    <script>
+        function arrayLength() {
+            var myArray = [1, 2, 3, 4, 5];
+            var output = "Array length: " + myArray.length;
+            document.getElementById('output').innerHTML = output;
+        }
+
+        function arrayToString() {
+            var myArray = [1, 2, 3, 4, 5];
+            var output = "Array as a string: " + myArray.toString();
+            document.getElementById('output').innerHTML = output;
+        }
+
+        function arrayPop() {
+            var myArray = [1, 2, 3, 4, 5];
+            var poppedElement = myArray.pop();
+            var output = "Popped element: " + poppedElement + "<br>Updated Array: " + myArray.toString();
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+    
+  <section class="loader">
+
+    <div class="slider" style="--i:0">
+    </div>
+    <div class="slider" style="--i:1">
+    </div>
+    <div class="slider" style="--i:2">
+    </div>
+    <div class="slider" style="--i:3">
+    </div>
+    <div class="slider" style="--i:4">
+    </div>
+  </section>
+
+</body>
+</html>
